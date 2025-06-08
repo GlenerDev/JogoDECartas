@@ -11,7 +11,7 @@ namespace RPGGameCli.src.Services.Models
         public static int Minutos = 60;
         public static int Segundos = 1;
         
-        public static int PrintarOTempo(int timeEmMinutos,Jogador p1 , Jogador p2,Partida partida)
+        public static int PrintarTempoEParaOTempo(int timeEmMinutos,Jogador p1 , Jogador p2,Partida partida)
         {
             int MinutosEmSegudos = timeEmMinutos * Minutos;
             int contador = 0;
