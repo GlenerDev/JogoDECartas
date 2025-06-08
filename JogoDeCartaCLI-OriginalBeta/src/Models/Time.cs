@@ -34,8 +34,6 @@ namespace RPGGameCli.src.Services.Models
                     return contador;
                 }
                 partida.Vencedor = p1;
-
-
             }
             return contador;
         }

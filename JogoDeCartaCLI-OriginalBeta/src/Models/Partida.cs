@@ -1,5 +1,4 @@
-﻿using RPGGameCli.Services;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,23 +24,27 @@ namespace RPGGameCli.src.Services.Models
         {
             var j1 = Jogadores[0];
             var j2 = Jogadores[1];
+
             Time.PrintarTempoEParaOTempo(TempoDeRounds, j1, j2, this);
+
             CartasDoJogo.DistribuirCartas(j1, j2);
+            Jogador[] vez = { j1, j2 };
             while (j1.Vida > 0 && j2.Vida > 0)
             {
-                Jogador[] vez = { j1, j2 };
                 for (int i = 0; i < vez.Length; i++)
                 {
                     Console.Clear();
                     var CartasDaMAo = vez[i].PuxarTrescartas();
-                    Console.WriteLine($"{CartasDaMAo[0].MostrarCarta}\n");
-                    Console.WriteLine($"{CartasDaMAo[1].MostrarCarta}\n");
-                    Console.WriteLine($"{CartasDaMAo[2].MostrarCarta}\n");
+
+                    Console.WriteLine($"1 \u00b1[32m:{CartasDaMAo[0].MostrarCarta}\u00b1[0m\n");
+                    Console.WriteLine($"2:\u00b1[32m:{CartasDaMAo[1].MostrarCarta}\u00b1[0m\n");
+                    Console.WriteLine($"3:\u00b1[32m:{CartasDaMAo[2].MostrarCarta}\u00b1[0m\n");
                     Console.WriteLine("Escolha a carta que esta na sua mão:");
                     var CartaDaEscolhida = int.Parse(Console.ReadLine());
                     switch (CartaDaEscolhida)
                     {
                         case 1:
+                            Console.WriteLine(CartasDaMAo[0].MostrarCarta);
                             if (CartasDaMAo[0].TipoDeDano == Tipo.Magia)
                             {
                                 vez[i].Enfeiticar(CartasDaMAo[0], vez[i + 1]);
@@ -49,21 +52,8 @@ namespace RPGGameCli.src.Services.Models
                             }
                             vez[i].Atacar(CartasDaMAo[0], vez[i + 1]);
                             break;
-                        case 2:
-
-
-
-
-
-
-
-
                     }
-
-
                 }
-
-
             }
 
         }

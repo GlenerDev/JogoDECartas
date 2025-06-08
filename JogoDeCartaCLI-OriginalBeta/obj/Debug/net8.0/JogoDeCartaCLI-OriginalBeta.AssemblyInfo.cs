@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JogoDeCartaCLI-OriginalBeta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+234f62c45a17840c07a409c4e5f6f1d766f29a44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7e78dec12b066fe840eddb160b895501a7f0cef")]
 [assembly: System.Reflection.AssemblyProductAttribute("JogoDeCartaCLI-OriginalBeta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JogoDeCartaCLI-OriginalBeta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
