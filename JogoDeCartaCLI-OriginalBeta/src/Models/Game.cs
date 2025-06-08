@@ -15,7 +15,6 @@ namespace RPGGameCli.src.Services.Models
         {
             MenuOpcoes();
         }
-        int cu = 34;
         public void MenuOpcoes()
         {
             Console.WriteLine("1 - Iniciar novo Jogo");
