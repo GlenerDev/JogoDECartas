@@ -12,7 +12,7 @@ namespace RPGGameCli.src.Services.Models
     internal class Jogador
     {
         public string Nome { get; set; }
-        public int Vida { get; private set; } = 100;
+        public int Vida { get;  set; } = 100;
         public int Vigor { get; set; } = 50;
         private int Mana { get; set; } = 50;
         public List<Carta> Deck = new List<Carta>();

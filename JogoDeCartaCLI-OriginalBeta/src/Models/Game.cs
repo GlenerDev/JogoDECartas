@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace RPGGameCli.src.Services.Models
 {
+
     internal class Game
     {
         public static List<Partida> ListaDePartida = new List<Partida>();
@@ -38,7 +39,10 @@ namespace RPGGameCli.src.Services.Models
             string? Jogador1 = Console.ReadLine();
             Console.Write("Coloque o nome do jogador 2:");
             string? Jogador2 = Console.ReadLine();
+            Console.WriteLine("Coloque o tempo que voce quer em cada round:");
+            var tempoRound = int.Parse(Console.ReadLine());
             var partidainciada = new Partida(Jogador1, Jogador2);
+            partidainciada.ComeçarRounds(tempoRound);
         }
     }
 }
