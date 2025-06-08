@@ -11,6 +11,7 @@ namespace RPGGameCli.src.Services.Models
 {
     internal class Partida
     {
+        public Jogador Vencedor { get; set; }
         public List<Carta> DeckPrincipal = new List<Carta>();
         public Time Tempo { get; set; }
         public int Rounds { get; private set; }
@@ -31,10 +32,12 @@ namespace RPGGameCli.src.Services.Models
                 Jogador[] vez = { j1, j2 };
                 for (int i = 0; i < vez.Length; i++) 
                 {
-                    var CartaParaOAtaque = vez[i].
+                    Console.Clear();
+                    var CartasDaMAo = vez[i].PuxarTrescartas();
+                    Console.WriteLine($"{CartasDaMAo[0]}");
                     Console.WriteLine("Escolha a carta que esta na sua mão:");
                     var CartaDaEscolhida = int.Parse(Console.ReadLine());
-                    switch (Carta) 
+                    switch (CartaDaEscolhida) 
                     {
                         case 1:
 
