@@ -29,11 +29,9 @@ namespace RPGGameCli.src.Services.Models
             while (j1.Vida > 0 && j2.Vida > 0)
             {
                 Jogador[] vez = { j1, j2 };
-                
-
                 for (int i = 0; i < vez.Length; i++) 
                 {
-                    var CartaParaOAtaque = vez[i].Mao;
+                    var CartaParaOAtaque = vez[i].
                     Console.WriteLine("Escolha a carta que esta na sua mão:");
                     var CartaDaEscolhida = int.Parse(Console.ReadLine());
                     switch (Carta) 

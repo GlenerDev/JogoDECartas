@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0DAB60DF-33BA-4EAD-98E4-D761D33EB4BA}|JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj|c:\\users\\pichau\\desktop\\projetos\\jogodecartacli-originalbeta\\jogodecartacli-originalbeta\\jogodecartacli-originalbeta.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0DAB60DF-33BA-4EAD-98E4-D761D33EB4BA}|JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj|solutionrelative:jogodecartacli-originalbeta\\jogodecartacli-originalbeta.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DAB60DF-33BA-4EAD-98E4-D761D33EB4BA}|JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj|c:\\users\\pichau\\desktop\\projetos\\jogodecartacli-originalbeta\\jogodecartacli-originalbeta\\src\\models\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DAB60DF-33BA-4EAD-98E4-D761D33EB4BA}|JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj|solutionrelative:jogodecartacli-originalbeta\\src\\models\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Partida.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
-              "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
-              "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:55:13.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
-              "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAApwCgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:53:11.45Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -76,7 +54,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JogoDeCartaCLI-OriginalBeta",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj",
+              "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj",
+              "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-08T02:55:12.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Partida.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
+              "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
+              "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Partida.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T01:55:13.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
+              "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\Game.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADgvygAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T01:53:11.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CartasDoJogo.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\src\\Models\\CartasDoJogo.cs",
               "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\CartasDoJogo.cs",
@@ -84,12 +100,11 @@
               "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\src\\Models\\CartasDoJogo.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:54:48.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T01:54:48.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\Desktop\\Projetos\\JogoDeCartaCLI-OriginalBeta\\JogoDeCartaCLI-OriginalBeta\\Program.cs",
               "RelativeDocumentMoniker": "JogoDeCartaCLI-OriginalBeta\\Program.cs",
@@ -97,8 +112,7 @@
               "RelativeToolTip": "JogoDeCartaCLI-OriginalBeta\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:49:47.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T01:49:47.586Z"
             },
             {
               "$type": "Bookmark",
