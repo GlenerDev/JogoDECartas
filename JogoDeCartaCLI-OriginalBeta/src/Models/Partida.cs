@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JogoDeCartaCLI_OriginalBeta.src.Models.CartaService;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace RPGGameCli.src.Services.Models
                     Console.Clear();
                     var CartasDaMAo = vez[i].PuxarTrescartas();
 
-                    Console.WriteLine($"1 \u00b1[32m:{CartasDaMAo[0].MostrarCarta}\u00b1[0m\n");
+                    Console.WriteLine($"1 \u00b1[32m:{CartasDaMAo[0].}\u00b1[0m\n");
                     Console.WriteLine($"2:\u00b1[32m:{CartasDaMAo[1].MostrarCarta}\u00b1[0m\n");
                     Console.WriteLine($"3:\u00b1[32m:{CartasDaMAo[2].MostrarCarta}\u00b1[0m\n");
                     Console.WriteLine("Escolha a carta que esta na sua mão:");

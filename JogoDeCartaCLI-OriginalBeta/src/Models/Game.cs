@@ -1,4 +1,4 @@
-﻿using RPGGameCli.src.Services.Models;
+﻿using JogoDeCartaCLI_OriginalBeta.src.Models.CartaService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +19,8 @@ namespace RPGGameCli.src.Services.Models
         public void MenuOpcoes()
         {
             Console.WriteLine("1 - Iniciar novo Jogo");
-            Console.WriteLine("3 - Ver o Dech do game");
-            Console.WriteLine("2 - Fechar jogo");
+            Console.WriteLine("2 - Ver o Dech do game");
+            Console.WriteLine("3 - Fechar jogo");
 
             var opcao = Convert.ToInt64(Console.ReadLine());
             switch (opcao)
@@ -30,14 +30,14 @@ namespace RPGGameCli.src.Services.Models
                     break;
                 case 2:
                     Console.Clear();
-                    Environment.Exit(0);
-                    break;
-                case 3:
-                    Console.Clear();
-                    CartasDoJogo.ListarTodasAsCartasDoGame();
+                    var listarcartasdojogo = new ApresentacaoDeCartas(CartasDoJogo.DeckGame);
+                    listarcartasdojogo.PrintarListaDeCartas();
                     Console.ReadKey();
                     Console.Clear();
                     MenuOpcoes();
+                    break;
+                case 3:
+                    Environment.Exit(0);
                     break;
 
             }

@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGGameCli.src.Services.Models
+namespace JogoDeCartaCLI_OriginalBeta.src.Models.CartaService
 {
-    enum Tipo 
+    internal class ManipulacaoDeCartas
     {
-        Magia,
-        Fisico,
-        Defesa
     }
 }

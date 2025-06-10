@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JogoDeCartaCLI_OriginalBeta.src.Models.CartaService;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace RPGGameCli.src.Services.Models
 {
     internal class Jogador
     {
-        public string Nome { get; set; }
+        public string Nome { get; set; } 
         public int Vida { get;  set; } = 100;
         public int Vigor { get; set; } = 50;
         private int Mana { get; set; } = 50;

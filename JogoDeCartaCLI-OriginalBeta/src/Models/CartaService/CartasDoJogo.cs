@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPGGameCli.src.Services.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGGameCli.src.Services.Models
+namespace JogoDeCartaCLI_OriginalBeta.src.Models.CartaService
 {
     internal class CartasDoJogo
     {
@@ -23,14 +24,7 @@ namespace RPGGameCli.src.Services.Models
             { 9, new Carta("Ladrao de Coringa", "Pega a melhor carta do adversario.", 0, Tipo.Fisico) },
             { 10, new Carta("Ataque da serpente", "Tira 12 de vida do adversario", 12, Tipo.Fisico) },
         };
-        public static void ListarTodasAsCartasDoGame()
-        {
-            foreach (var item in DeckGame)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"TITULO:{item.Key}\nDESCRIÇÂO:{item.Value.Descricao}\nDANO:{item.Value.Dano}\n");
-            }
-        }
+       
         public static Carta CartaAleatoria()
         {
             var cards = new Dictionary<Carta, int>();
