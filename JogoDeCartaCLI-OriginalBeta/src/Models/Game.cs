@@ -29,12 +29,7 @@ namespace RPGGameCli.src.Services.Models
                     CriarPartida();
                     break;
                 case 2:
-                    Console.Clear();
-                    var listarcartasdojogo = new ApresentacaoDeCartas(CartasDoJogo.DeckGame);
-                    listarcartasdojogo.PrintarListaDeCartas();
-                    Console.ReadKey();
-                    Console.Clear();
-                    MenuOpcoes();
+                    VerDeckFoJogo();
                     break;
                 case 3:
                     Environment.Exit(0);
@@ -44,6 +39,7 @@ namespace RPGGameCli.src.Services.Models
         }
         public void CriarPartida()
         {
+            Console.Clear();
             Console.Write("Coloque o nome do jogador 1:");
             string? Jogador1 = Console.ReadLine();
             Console.Write("Coloque o nome do jogador 2:");
@@ -52,6 +48,16 @@ namespace RPGGameCli.src.Services.Models
             var tempoRound = int.Parse(Console.ReadLine());
             var partidainciada = new Partida(Jogador1, Jogador2);
             partidainciada.ComeçarRounds(tempoRound);
+        }
+        public void VerDeckFoJogo() 
+        {
+            Console.Clear();
+            var listarcartasdojogo = new ApresentacaoDeCartas(CartasDoJogo.DeckGame);
+            listarcartasdojogo.PrintarListaDeCartas();
+            Console.ReadKey();
+            Console.Clear();
+            MenuOpcoes();
+
         }
     }
 }
