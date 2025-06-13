@@ -1,4 +1,5 @@
 ﻿using JogoDeCartaCLI_OriginalBeta.src.Models.CartaService;
+using JogoDeCartaCLI_OriginalBeta.src.Models.TimerService;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,8 +28,8 @@ namespace RPGGameCli.src.Services.Models
             var j2 = Jogadores[1];
 
 
-            var mani = new ManipulacaoDeCartas();
-            mani.DistribuirCartas(j1, j2);
+            var manipulacao = new ManipulacaoDeCartas();
+            manipulacao.DistribuirCartas(j1, j2);
             Jogador[] vez = { j1, j2 };
             while (j1.Vida > 0 && j2.Vida > 0)
             {
@@ -43,18 +44,20 @@ namespace RPGGameCli.src.Services.Models
                     switch (CartaDaEscolhida)
                     {
                         case 1:
-                            Console.WriteLine(CartasDaMAo[0]);
-                            if (CartasDaMAo[0].TipoDeDano == Tipo.Magia)
-                            {
-                                vez[i].Enfeiticar(CartasDaMAo[0], vez[i + 1]);
-                                return;
-                            }
-                            vez[i].Atacar(CartasDaMAo[0], vez[i + 1]);
-                            break;
+                            apresentacao.MostrarCarta(CartasDaMAo[0]);
+                            CartaAttack.LogicAttack(CartasDaMAo, i, vez, 0); break;
+                        case 2:
+                            apresentacao.MostrarCarta(CartasDaMAo[1]);
+                            CartaAttack.LogicAttack(CartasDaMAo, i, vez, 1); break;
+                        case 3:
+                            apresentacao.MostrarCarta(CartasDaMAo[2]);
+                            CartaAttack.LogicAttack(CartasDaMAo, i, vez, 2); break;
                     }
                 }
             }
-
+            Vencedor = j1.Vida > 0 ? j1 : j2;
+            Console.Clear();
+            Console.WriteLine($"PARABENS O VENCEDOR È {Vencedor.Nome}");
         }
 
     }
