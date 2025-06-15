@@ -13,11 +13,23 @@ namespace RPGGameCli.src.Services.Models
 {
     internal class Partida
     {
-        public Jogador Vencedor { get; set; }
+        Jogador Vencedor { get; set; }
         public List<Carta> DeckPrincipal = new List<Carta>();
-        public Time Tempo { get; set; }
+        private Time Tempo { get; set; }
         public int Rounds { get; private set; }
-        public Jogador[] Jogadores = new Jogador[2];
+        private Jogador[] Jogadores { get; set; } = new Jogador[2];
+        public Jogador[] GetJogadores
+        {
+            get
+            {
+                if (Jogadores[0] == null || Jogadores[1] == null)
+                {
+                    throw new InvalidOperationException("Os jogadores não foram inicializados corretamente.");
+                }
+
+                return Jogadores;
+            }
+        }
         public Partida(string nomeDojogador1, string nomeDojogador2)
         {
             Jogadores[0] = new Jogador(nomeDojogador1);
@@ -43,7 +55,7 @@ namespace RPGGameCli.src.Services.Models
                     var CartasDaMAo = VezDoJogador[indexplay1].Mao = VezDoJogador[indexplay1].PuxarTrescartas().ToArray();
                     var apresentacao = new ApresentacaoDeCartas(CartasDaMAo);
                     MostrarJogador.MostrarAVezDoJogador(VezDoJogador[indexplay1]);
-                    Console.WriteLine($"{VezDoJogador[indexplay2].Nome}\nVIDAS:{VezDoJogador[indexplay1].Nome}:{VezDoJogador[indexplay1].Vida}|{VezDoJogador[indexplay2].Nome}:{VezDoJogador[indexplay2].Vida}");
+                    Console.WriteLine($"{VezDoJogador[indexplay2].Nome}\nVIDAS:{VezDoJogador[0].Nome}:{VezDoJogador[0].Vida}|{VezDoJogador[1].Nome}:{VezDoJogador[1].Vida}");
                     apresentacao.PrintarArrayDeCartas();
                     VezDoJogador[indexplay1].Atacando(VezDoJogador[indexplay2]);
                     indexplay1 = 1;
